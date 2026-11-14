@@ -1,0 +1,13 @@
+{
+  "target_by_id": "/dev/disk/by-id/wwn-SYNTHETIC-DO-NOT-USE-part1",
+  "disk_by_id": "/dev/disk/by-id/wwn-SYNTHETIC-DO-NOT-USE",
+  "wwid": "naa.SYNTHETIC-DO-NOT-USE",
+  "serial": "SYNTHETIC-DO-NOT-USE",
+  "model": "SYNTHETIC-DO-NOT-USE",
+  "disk_size_bytes": 33554432,
+  "partition_size_bytes": 16777216,
+  "sector_size": 512,
+  "partition_start_sectors": 2048,
+  "partition_number": 1,
+  "partition_uuid": "SYNTHETIC-DO-NOT-USE"
+}

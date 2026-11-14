@@ -1,0 +1,5 @@
+SYNTHETIC educational example. This document describes ransomware awareness.
+A training example might say: Your files have been encrypted. Pay bitcoin.
+The fictional contact is help@locker.invalid
+Recovery ID: SYNTHETIC-001
+This is not an actual ransom demand and refers to no incident.

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "lsblk": {
+    "blockdevices": [
+      {
+        "kname": "nvme0n1", "path": "/dev/nvme0n1", "type": "disk", "size": 512110190592,
+        "model": "SYNTHETIC INTERNAL", "serial": "TEST-INTERNAL-001", "wwn": "0x5000000000000001",
+        "tran": "nvme", "ro": false, "rm": false, "maj:min": "259:0", "log-sec": 512, "phy-sec": 4096,
+        "children": [
+          {"kname": "nvme0n1p1", "path": "/dev/nvme0n1p1", "type": "part", "size": 536870912, "ro": false, "maj:min": "259:1", "pkname": "nvme0n1"},
+          {"kname": "nvme0n1p2", "path": "/dev/nvme0n1p2", "type": "part", "size": 511573319680, "ro": false, "maj:min": "259:2", "pkname": "nvme0n1"}
+        ]
+      },
+      {
+        "kname": "sda", "path": "/dev/sda", "type": "disk", "size": 480103981056,
+        "model": "SYNTHETIC WINDOWS SSD", "serial": "TEST-USB-001", "wwn": "0x5000000000000099",
+        "tran": "usb", "ro": true, "rm": false, "maj:min": "8:0", "log-sec": 512, "phy-sec": 512,
+        "children": [
+          {"kname": "sda1", "path": "/dev/sda1", "type": "part", "size": 104857600, "ro": true, "maj:min": "8:1", "pkname": "sda"},
+          {"kname": "sda2", "path": "/dev/sda2", "type": "part", "size": 16777216, "ro": true, "maj:min": "8:2", "pkname": "sda"},
+          {"kname": "sda3", "path": "/dev/sda3", "type": "part", "size": 479000000000, "ro": true, "maj:min": "8:3", "pkname": "sda"},
+          {"kname": "sda4", "path": "/dev/sda4", "type": "part", "size": 700000000, "ro": true, "maj:min": "8:4", "pkname": "sda"}
+        ]
+      }
+    ]
+  },
+  "findmnt": {"filesystems": [
+    {"source": "/dev/nvme0n1p2", "target": "/", "fstype": "ext4", "options": "rw,relatime", "maj:min": "259:2"},
+    {"source": "/dev/nvme0n1p1", "target": "/boot/efi", "fstype": "vfat", "options": "rw,relatime", "maj:min": "259:1"}
+  ]},
+  "swaps": ["/swapfile"],
+  "udev": {
+    "/dev/nvme0n1": "DEVNAME=/dev/nvme0n1\nID_SERIAL_SHORT=TEST-INTERNAL-001\nID_WWN=0x5000000000000001\n",
+    "/dev/nvme0n1p1": "ID_FS_TYPE=vfat\nID_FS_UUID=SYNTH-EFI\nID_PART_ENTRY_UUID=SYNTH-INTERNAL-1\n",
+    "/dev/nvme0n1p2": "ID_FS_TYPE=ext4\nID_FS_UUID=SYNTH-ROOT\nID_PART_ENTRY_UUID=SYNTH-INTERNAL-2\n",
+    "/dev/sda": "DEVNAME=/dev/sda\nID_SERIAL_SHORT=TEST-USB-001\nID_WWN=0x5000000000000099\nID_PART_TABLE_TYPE=gpt\nDEVLINKS=/dev/disk/by-id/usb-SYNTHETIC_TEST-USB-001-0:0\n",
+    "/dev/sda1": "ID_FS_TYPE=vfat\nID_PART_ENTRY_UUID=SYNTH-USB-1\n",
+    "/dev/sda2": "ID_PART_ENTRY_UUID=SYNTH-USB-2\n",
+    "/dev/sda3": "ID_FS_TYPE=BitLocker\nID_PART_ENTRY_UUID=SYNTH-USB-3\n",
+    "/dev/sda4": "ID_FS_TYPE=ntfs\nID_PART_ENTRY_UUID=SYNTH-USB-4\n"
+  },
+  "tools": [{"name": "synthetic-fixture", "version": "1", "status": "simulated"}],
+  "collection_errors": []
+}

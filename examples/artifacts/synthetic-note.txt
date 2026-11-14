@@ -1,0 +1,7 @@
+SYNTHETIC FIXTURE. No real person, organization or incident is represented.
+Your files have been encrypted. Pay bitcoin to recover your files.
+Contact: help@locker.invalid
+Portal: hxxps://portal.locker.invalid/recover
+Claimed algorithm: AES-256 and RSA-2048. Family: ExampleLocker
+Recovery ID: SYNTHETIC-001
+This file is inert text for offline tests. Never send payment or contact anyone.

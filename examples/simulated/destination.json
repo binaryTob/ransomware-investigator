@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mode": "simulated",
+  "observed_at": "2000-11-10T00:00:00+00:00",
+  "path": "/synthetic-evidence/case-001/image.raw",
+  "mount_target": "/",
+  "device_maj_min": "259:2",
+  "filesystem": "ext4",
+  "available_bytes": 250181844992,
+  "reserve_bytes": 1073741824,
+  "max_file_size_bytes": 17592186044416,
+  "writable": true,
+  "target_exists": false,
+  "symlinks_checked": true,
+  "existing_copy": null
+}
